@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-weight: bold;
+    color: #4A154B;
+    font-size: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#logout-btn {
+    background-color: #e11d48;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Main Layout */
+.main-container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    gap: 20px;
+    padding: 0 15px;
+}
+
+/* Left & Right Sections */
+.left-section, .right-section {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.left-section {
+    flex: 1;
+}
+
+.right-section {
+    flex: 1.5;
+}
+
+/* Cart & Table Styling */
+.cart-box {
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 15px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    display: none;
+}
+
+#cart-table th, #cart-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #edf2f7;
+}
+
+#empty-cart-msg {
+    text-align: center;
+    color: #a0aec0;
+}
+
+.total-section {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 10px 0;
+    border-top: 1px dashed #cbd5e1;
+}
+
+/* Form Styling */
+.booking-form h3 {
+    margin-bottom: 15px;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+#book-now-btn {
+    width: 100%;
+    background-color: #cbd5e1;
+    color: #555;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: not-allowed;
+    font-weight: bold;
+}
+
+#book-now-btn.active {
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+/* Right Section Services Styling */
+.section-desc {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.service-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.service-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #2563eb;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.card-buttons button {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.skip-btn {
+    background-color: #fff;
+    color: #e11d48;
+    border-color: #fca5a5 !important;
+}
+
+.add-btn {
+    background-color: #22c55e;
+    color: white;
+    border: none !important;
+}
+
+.cart-info-bar {
+    margin-top: 20px;
+    background-color: #fef2f2;
+    color: #ef4444;
+    padding: 12px;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}

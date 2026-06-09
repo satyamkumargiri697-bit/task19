@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Booking Web App</title>
+    <!-- CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">TuteDude</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+        <div class="nav-right">
+            <span id="username">Satyam</span>
+            <button id="logout-btn">Logout</button>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        
+        <!-- Left Section (Cart & Booking) -->
+        <div class="left-section">
+            <h3>Added Items</h3>
+            <div class="cart-box">
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Service Name</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-items">
+                        <!-- Items JS se yahan add honge -->
+                    </tbody>
+                </table>
+                <p id="empty-cart-msg">No Items Added<br><small>Add items to the cart from the services list</small></p>
+            </div>
+
+            <div class="total-section">
+                <span>Total Amount:</span>
+                <span id="total-amount">₹ 0</span>
+            </div>
+
+            <!-- Booking Form -->
+            <div class="booking-form">
+                <h3>Book Now</h3>
+                <form id="order-form">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email ID" required>
+                    <input type="password" id="phone" placeholder="Password" required>
+                    <button type="submit" id="book-now-btn">Book Now</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Right Section (Browse Services) -->
+        <div class="right-section">
+            <h2>Browse Our Services</h2>
+            <p class="section-desc">Click on the add button to add the services to your cart or order map.</p>
+            
+            <div class="services-list">
+                <!-- Service Card 1 -->
+                <div class="service-card" data-id="1" data-name="Dry Cleaning" data-price="200">
+                    <img src="mattress-drycleaning.jpg" alt="Dry Cleaning">
+                    <h4>Dry Cleaning</h4>
+                    <p class="price">₹200.00</p>
+                    <div class="card-buttons">
+                        <button class="skip-btn">Skip Item</button>
+                        <button class="add-btn">Add Item</button>
+                    </div>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="service-card" data-id="2" data-name="House Cleaning" data-price="500">
+                    <img src="bedroom-cleaning.jpg" alt="House Cleaning">
+                    <h4>House Cleaning</h4>
+                    <p class="price">₹500.00</p>
+                    <div class="card-buttons">
+                        <button class="skip-btn">Skip Item</button>
+                        <button class="add-btn">Add Item</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-info-bar">
+                <span>Add the items in the cart and book now</span>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JavaScript File Link -->
+    <script src="script.js"></script>
+</body>
+</html>
